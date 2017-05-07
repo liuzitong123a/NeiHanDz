@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NeiHanDzClient</string>
+    <string name="home">首页</string>
+    <string name="discover">发现</string>
+    <string name="review">新鲜</string>
+    <string name="message">消息</string>
+    <string name="me">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="video">视频</string>
+    <string name="friend">段友秀</string>
+    <string name="pic">图片</string>
+    <string name="dz">段子</string>
+    <string name="essence">精华</string>
+    <string name="jock">笑话</string>
+    <string name="post">投稿至</string>
+    <string name="selectBar">点击选吧</string>
+</resources>

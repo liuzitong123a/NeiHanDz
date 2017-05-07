@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioGroup">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:text="@string/home"
+            android:textColor="@drawable/textview_tab_color" />
+
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/discover"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:text="@string/discover"
+            android:textColor="@drawable/textview_tab_color" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:src="@drawable/a2r" />
+
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/message"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:text="@string/message"
+            android:textColor="@drawable/textview_tab_color" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/review"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:text="@string/review"
+            android:textColor="@drawable/textview_tab_color" />
+    </RadioGroup>
+</RelativeLayout>
+

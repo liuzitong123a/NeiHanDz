@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/bg_top_bar">
+
+        <include layout="@layout/commen_comment_titlebar"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/srcollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:layout_marginBottom="40dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip">
+
+                <include layout="@layout/commen_comment_user"></include>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip">
+
+                <include layout="@layout/commen_comment_time"></include>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="内涵段子"
+                android:textColor="#6CC0DD" />
+
+            <TextView
+                android:id="@+id/textContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="5dip"
+                android:text="1111"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="10dip">
+
+                <include layout="@layout/commen_comment_button"></include>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="评论区"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/activity_layout_recycle"></include>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/srcollView"
+        android:layout_alignParentBottom="true"
+        android:background="#4D4036">
+
+        <include layout="@layout/commen_comment_bottom"></include>
+
+    </LinearLayout>
+
+</RelativeLayout>

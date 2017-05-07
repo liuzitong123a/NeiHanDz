@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/userHeader"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nickName"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/userHeader"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textColor="#00f"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/attentionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@null"
+        android:src="@drawable/attention" />
+</RelativeLayout>

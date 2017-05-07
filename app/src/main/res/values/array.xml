@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_tags">
+        <item>@string/tab_1</item>
+        <item>@string/tab_2</item>
+        <item>@string/tab_3</item>
+        <item>@string/tab_4</item>
+        <item>@string/tab_5</item>
+        <item>@string/tab_6</item>
+        <item>@string/tab_7</item>
+    </string-array>
+
+    <string name="tab_1">推荐</string>
+    <string name="tab_2">视频</string>
+    <string name="tab_3">图片</string>
+    <string name="tab_4">段友秀</string>
+    <string name="tab_5">段子</string>
+    <string name="tab_6">精华</string>
+    <string name="tab_7">笑话</string>
+</resources>

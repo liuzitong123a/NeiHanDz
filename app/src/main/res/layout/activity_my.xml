@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#EEEEEE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:background="@drawable/ic_profile_header">
+
+                <ImageView
+                    android:id="@+id/myHeader"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dip"
+                    android:src="@drawable/my_defalut_avatar" />
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/ic_profile_back" />
+
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/ic_profile_signin"
+                    android:gravity="center"
+                    android:text="立即登陆"
+                    android:textColor="#D7D7D7" />
+
+                <TextView
+                    android:id="@+id/nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dip"
+                    android:textColor="#D7D7D7"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </View>
+
+                <RadioButton
+                    android:id="@+id/review"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/my_table_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="投稿"
+                    android:textColor="@drawable/mytextcolor"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/collection"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/my_table_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="@drawable/mytextcolor"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/comment"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/my_table_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="@drawable/mytextcolor"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </View>
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@+id/myFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
